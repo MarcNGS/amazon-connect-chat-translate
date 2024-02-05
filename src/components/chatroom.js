@@ -67,7 +67,8 @@ const Chatroom = (props) => {
          
          ******************************************************************************************************/
 
-        let translatedMessageAPI = await translateTextAPI(newMessage, 'en', destLang.lang, ['connectChatTranslate']); // Provide a custom terminology created outside of this deployment
+        let translatedMessageAPI = await translateTextAPI(newMessage, 'fr', destLang.lang, ['connectChatTranslate']); // Provide a custom terminology created outside of this deployment
+        /// XXX Modified to translate from French (agent) to the customer's language
         let translatedMessage = translatedMessageAPI.TranslatedText
 
         console.log(` Original Message: ` + newMessage + `\n Translated Message: ` + translatedMessage);
